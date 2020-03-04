@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Shared.Interfaces.Messages;
 using Shared.Interfaces.Infrastructure;
-using Shared.Models.AzureMessages;
+using Shared.Models.Azure;
 using System;
 using System.Linq;
 using Shared.Infrastructure.Azure;

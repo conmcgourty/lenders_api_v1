@@ -18,7 +18,7 @@ namespace WebAPIApplication.Controllers
         }
 
         [HttpGet("private")]
-        //[Authorize]
+        [Authorize]
         public IActionResult Private()
         {
             return Ok(new

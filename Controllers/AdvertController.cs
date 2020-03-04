@@ -42,7 +42,7 @@ namespace WebAPIApplication.Controllers
 
         // POST api/<controller>
         [HttpPost]
-        public void Post([FromBody] Shared.Models.DomainModels.Advert value)
+        public async Task Post([FromBody] Shared.Models.DomainModels.Advert value)
         {
             var message = _provider.GetService<IMessage>();
             message.Command = Command.Create.ToString();
