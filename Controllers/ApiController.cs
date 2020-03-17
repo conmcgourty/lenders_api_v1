@@ -1,6 +1,7 @@
 using System.Linq;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Shared.Models.DomainModels;
 
 namespace WebAPIApplication.Controllers
 {
@@ -21,6 +22,20 @@ namespace WebAPIApplication.Controllers
         [Authorize]
         public IActionResult Private()
         {
+            var user = HttpContext.User;
+
+            return Ok(new
+            {
+                Message = "Hello from a private endpoint! You need to be authenticated to see this."
+            });
+        }
+
+        [HttpPost("private")]
+        [Authorize]
+        public IActionResult PostPrivate(AdvertDTO advert)
+        {
+            var user = HttpContext.User;
+
             return Ok(new
             {
                 Message = "Hello from a private endpoint! You need to be authenticated to see this."
