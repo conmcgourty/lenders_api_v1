@@ -27,7 +27,7 @@ namespace WebAPIApplication
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc(options => options.EnableEndpointRouting = false).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-                   
+
             services.AddCors(options =>
             {
                 options.AddPolicy("AllowSpecificOrigin",

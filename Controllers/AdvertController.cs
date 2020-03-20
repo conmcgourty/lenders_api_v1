@@ -17,7 +17,8 @@ namespace WebAPIApplication.Controllers
 {
     
     [Route("api/advert/")]
-    public class AdvertController : Controller
+    [ApiController]
+    public class AdvertController : ControllerBase
     {   
 
         IServiceProvider _provider;
@@ -46,15 +47,14 @@ namespace WebAPIApplication.Controllers
         [Authorize]
         public async Task Create([FromBody] Shared.Models.DomainModels.AdvertDTO value)
         {
-
             Console.WriteLine(value);
-            //var message = _provider.GetService<IMessage>();
-            //message.Command = Command.Create.ToString();
-            //message.Payload = JsonConvert.SerializeObject(value);
+            var message = _provider.GetService<IMessage>();
+            message.Command = Command.Create.ToString();
+            message.Payload = JsonConvert.SerializeObject(value);
 
-            //var queue = _provider.GetService<IQueueRepo>();
+            var queue = _provider.GetService<IQueueRepo>();
 
-            //queue.AddMessage(message, "advert");
+            await queue.AddMessage(message, "advert");
 
         }
 
