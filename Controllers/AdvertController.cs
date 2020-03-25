@@ -45,7 +45,7 @@ namespace WebAPIApplication.Controllers
         // POST api/<controller>
         [HttpPost("create")]
         [Authorize]
-        public async Task Create([FromBody] Shared.Models.DomainModels.AdvertDTO value)
+        public IActionResult Create([FromBody] Shared.Models.DomainModels.AdvertDTO value)
         {
             Console.WriteLine(value);
             var message = _provider.GetService<IMessage>();
@@ -54,8 +54,22 @@ namespace WebAPIApplication.Controllers
 
             var queue = _provider.GetService<IQueueRepo>();
 
-            await queue.AddMessage(message, "advert");
+            try
+            {
+                queue.AddMessage(message, "advert");
 
+                return Ok(new
+                {
+                    Message = "New Advert Created"
+                });
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Exception thrown: {ex}");
+                return StatusCode(500);
+            }
+            
         }
 
         // PUT api/<controller>/5
