@@ -16,5 +16,7 @@ namespace Shared.Models.Azure
         public string PartKey { get; set ; }
         public string RowKey { get; set; }
         public string Payload { get; set; }
+        public string Id { get; set; }
+        public string PopId { get; set; }
     }
 }

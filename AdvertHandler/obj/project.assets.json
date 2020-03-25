@@ -5459,11 +5459,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\conmc\\source\\repos\\lenders_api\\AdvertHandler\\AdvertHandler.csproj",
+      "projectUniqueName": "C:\\Users\\conmc\\source\\repos\\lenders_api_v1\\AdvertHandler\\AdvertHandler.csproj",
       "projectName": "AdvertHandler",
-      "projectPath": "C:\\Users\\conmc\\source\\repos\\lenders_api\\AdvertHandler\\AdvertHandler.csproj",
+      "projectPath": "C:\\Users\\conmc\\source\\repos\\lenders_api_v1\\AdvertHandler\\AdvertHandler.csproj",
       "packagesPath": "C:\\Users\\conmc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\conmc\\source\\repos\\lenders_api\\AdvertHandler\\obj\\",
+      "outputPath": "C:\\Users\\conmc\\source\\repos\\lenders_api_v1\\AdvertHandler\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\conmc\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5479,8 +5479,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\conmc\\source\\repos\\lenders_api\\Shared\\Shared.csproj": {
-              "projectPath": "C:\\Users\\conmc\\source\\repos\\lenders_api\\Shared\\Shared.csproj"
+            "C:\\Users\\conmc\\source\\repos\\lenders_api_v1\\Shared\\Shared.csproj": {
+              "projectPath": "C:\\Users\\conmc\\source\\repos\\lenders_api_v1\\Shared\\Shared.csproj"
             }
           }
         }

@@ -12,9 +12,20 @@ namespace AdvertHandler
 
             while (true)
             {
-                function.Run();
+                try
+                {
+                    Console.WriteLine($"Waking up Now to go to Work! @ {DateTime.Now}");
+                    function.Run();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Exception Thrown: {ex}");
+                    Console.WriteLine("Now Get back to work!");
+                }
 
-                Thread.Sleep(300000);
+                Console.WriteLine($"Going to Sleep for 1 mintue {DateTime.Now}");
+                //Thread.Sleep(60000); // 60 seconds
+                Thread.Sleep(10000); // 10 seconds
             }
         }
     }

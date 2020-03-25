@@ -2,8 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\AdvertHandler",
-    "\\WebApi",
-    "\\WebApi\\Controllers"
+    "\\Shared",
+    "\\WebApi"
   ],
   "SelectedNode": "\\WebApi\\WebAPIApplication.sln",
   "PreviewInSolutionExplorer": false

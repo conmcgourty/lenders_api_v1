@@ -46,6 +46,31 @@ namespace Shared.Infrastructure.Azure
             return (IMessage)message;
         }
 
+        public Task<IMessage> DeleteMessage(IMessageBase message, string Queue)
+        {
+            storageAccount = CloudStorageAccount.Parse(this._configuration.GetConnectionString("Storage"));
+            queueClient = storageAccount.CreateCloudQueueClient();
+            CloudQueue queueCloud = queueClient.GetQueueReference(Queue);
+
+
+            try
+            {
+                queueCloud.DeleteMessageAsync(message.Id, message.PopId);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Threw an exception Trying to Delete Cloud Message ID: {message.Id}");
+                throw ex;
+            }
+            
+
+            //CloudQueueMessage cloudMessage = new CloudQueueMessage(JsonConvert.SerializeObject(message.Id));
+                     
+            //queueCloud.DeleteMessageAsync(cloudMessage);
+
+            return null;
+        }
+
         public void OnInIt()
         {
             var queues = _configuration.GetSection("Queues").GetChildren();
@@ -109,18 +134,23 @@ namespace Shared.Infrastructure.Azure
             CloudQueue queueCloud = queueClient.GetQueueReference(Queue);
 
             var messages = queueCloud.GetMessagesAsync(MessageCount).Result;
+            
 
             foreach (var cloudMessage in messages)
             {
 
                 Console.WriteLine(cloudMessage.AsString);
                 var message = JsonConvert.SerializeObject(cloudMessage.AsString);
-
+                
                 AzureMessage azureMessage = JsonConvert.DeserializeObject<AzureMessage>(cloudMessage.AsString);
-
+                azureMessage.Id = cloudMessage.Id;
+                azureMessage.PopId = cloudMessage.PopReceipt;
+                
                 iMessagesCollection.Add(azureMessage);
 
+                #region MyRegion
 
+                #endregion
                 // IMessage order = new IMessage();
                 //order = JsonConvert.DeserializeObject<AzureMessageOrder>(cloudMessage.AsString);
 

@@ -26,22 +26,29 @@ namespace Shared.Infrastructure.Azure
 
         public IAdvert AddEntity(string payload, string table)
         {
-            Advert advert = new Models.DomainModels.Advert();
+            AdvertDomain advert = new Models.DomainModels.AdvertDomain(JsonConvert.DeserializeObject<AdvertDTO>(payload));
 
-            advert = JsonConvert.DeserializeObject<Advert>(payload);
-            
             storageAccount = CloudStorageAccount.Parse(this._configuration.GetConnectionString("Storage"));
             tableClient = storageAccount.CreateCloudTableClient();
             tableCloud = tableClient.GetTableReference(table);
 
-            advert.PartitionKey = advert.Advert_Category.ToLower();
-            advert.RowKey = advert.Advert_Title + "^" + advert.Advert_Contact + "^" + advert.Advert_Locaton;
+            advert.PartitionKey = advert.Advert_Category.ToUpper();
+            advert.RowKey = advert.Advert_Title.ToUpper().Trim() + "^" + advert.Advert_Contact + "^" + DateTime.Now.Millisecond.ToString();
 
             //AzureMessageConfirmation confirmation = new AzureMessageConfirmation(message.AgentID, message.OrderStatus, message.OrderId);
 
-            TableOperation operation = TableOperation.Insert(advert);
-
-            tableCloud.ExecuteAsync(operation).Wait();
+            TableOperation operation = TableOperation.InsertOrReplace(advert);
+            
+            try
+            {
+                tableCloud.ExecuteAsync(operation).Wait();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Exception thrown @ {DateTime.Now} : Where: {ex.StackTrace}");
+                throw ex;
+            }
+          
 
             return advert;
 

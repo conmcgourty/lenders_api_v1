@@ -17,6 +17,8 @@ namespace AdvertHandler
         {
             messages = GetMessages();
 
+            Console.WriteLine($"I Got {messages.Count.ToString()} Messages: Processing");
+
             foreach (var message in messages)
             {
                 switch (message.Command)
@@ -36,10 +38,23 @@ namespace AdvertHandler
         private void CreateAdvert(IMessageBase message)
         {
             var tableRepo = serviceProvider.GetService<ITableRepo>();
+            IAdvert advert;
 
-            IAdvert advert = tableRepo.AddEntity(message.Payload, "advert");
+            try
+            {
+                advert = tableRepo.AddEntity(message.Payload, "advert");
 
-            Console.WriteLine("Advert:" + advert);
+                if (advert != null)
+                {
+                    var messageRepo = serviceProvider.GetService<IQueueRepo>();
+                    messageRepo.DeleteMessage(message, "advert");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Exception Was thrown @ CreateAdvert  - Not going to remove message form the Advert queue - Exception {ex}");
+            }
+            
         }
 
         private List<IMessageBase> GetMessages()

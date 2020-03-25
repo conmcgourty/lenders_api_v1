@@ -11,6 +11,7 @@ namespace Shared.Interfaces.Infrastructure
         Task<IMessage> AddMessage(IMessageBase message, string Queue);
         IEnumerable<IMessageBase> ReadMessages(string Queue, int MessageCount);
 
+        Task<IMessage> DeleteMessage(IMessageBase message, string Queue);
 
     
     }

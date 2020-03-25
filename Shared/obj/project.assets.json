@@ -5441,11 +5441,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\conmc\\source\\repos\\lenders_api\\Shared\\Shared.csproj",
+      "projectUniqueName": "C:\\Users\\conmc\\source\\repos\\lenders_api_v1\\Shared\\Shared.csproj",
       "projectName": "Shared",
-      "projectPath": "C:\\Users\\conmc\\source\\repos\\lenders_api\\Shared\\Shared.csproj",
+      "projectPath": "C:\\Users\\conmc\\source\\repos\\lenders_api_v1\\Shared\\Shared.csproj",
       "packagesPath": "C:\\Users\\conmc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\conmc\\source\\repos\\lenders_api\\Shared\\obj\\",
+      "outputPath": "C:\\Users\\conmc\\source\\repos\\lenders_api_v1\\Shared\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\conmc\\AppData\\Roaming\\NuGet\\NuGet.Config",
