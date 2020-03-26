@@ -1,0 +1,6 @@
+C:\Users\conmc\source\repos\lenders-api_v3\quickstart\01-authorization\obj\Debug\netcoreapp3.0\WebAPIApplication.csprojAssemblyReference.cache
+C:\Users\conmc\source\repos\lenders-api_v3\quickstart\01-authorization\obj\Debug\netcoreapp3.0\staticwebassets\WebAPIApplication.StaticWebAssets.Manifest.cache
+C:\Users\conmc\source\repos\lenders-api_v3\quickstart\01-authorization\obj\Debug\netcoreapp3.0\staticwebassets\WebAPIApplication.StaticWebAssets.xml
+C:\Users\conmc\source\repos\lenders-api_v3\quickstart\01-authorization\obj\Debug\netcoreapp3.0\WebAPIApplication.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\conmc\source\repos\lenders-api_v3\quickstart\01-authorization\obj\Debug\netcoreapp3.0\WebAPIApplication.AssemblyInfoInputs.cache
+C:\Users\conmc\source\repos\lenders-api_v3\quickstart\01-authorization\obj\Debug\netcoreapp3.0\WebAPIApplication.AssemblyInfo.cs

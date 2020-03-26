@@ -1,0 +1,5 @@
+C:\Users\conmc\source\repos\lenders-api_v3\quickstart\01-authorization\obj\Debug\netcoreapp2.1\WebAPIApplication.csprojAssemblyReference.cache
+C:\Users\conmc\source\repos\lenders-api_v3\quickstart\01-authorization\obj\Debug\netcoreapp2.1\WebAPIApplication.RazorAssemblyInfo.cache
+C:\Users\conmc\source\repos\lenders-api_v3\quickstart\01-authorization\obj\Debug\netcoreapp2.1\WebAPIApplication.RazorAssemblyInfo.cs
+C:\Users\conmc\source\repos\lenders-api_v3\quickstart\01-authorization\obj\Debug\netcoreapp2.1\WebAPIApplication.AssemblyInfoInputs.cache
+C:\Users\conmc\source\repos\lenders-api_v3\quickstart\01-authorization\obj\Debug\netcoreapp2.1\WebAPIApplication.AssemblyInfo.cs

@@ -1,0 +1,17 @@
+C:\Users\conmc\source\repos\lenders-api_v3\quickstart\01-authorization\bin\Debug\netcoreapp2.2\web.config
+C:\Users\conmc\source\repos\lenders-api_v3\quickstart\01-authorization\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\conmc\source\repos\lenders-api_v3\quickstart\01-authorization\bin\Debug\netcoreapp2.2\hosting.json
+C:\Users\conmc\source\repos\lenders-api_v3\quickstart\01-authorization\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\conmc\source\repos\lenders-api_v3\quickstart\01-authorization\bin\Debug\netcoreapp2.2\WebAPIApplication.deps.json
+C:\Users\conmc\source\repos\lenders-api_v3\quickstart\01-authorization\bin\Debug\netcoreapp2.2\WebAPIApplication.runtimeconfig.json
+C:\Users\conmc\source\repos\lenders-api_v3\quickstart\01-authorization\bin\Debug\netcoreapp2.2\WebAPIApplication.runtimeconfig.dev.json
+C:\Users\conmc\source\repos\lenders-api_v3\quickstart\01-authorization\bin\Debug\netcoreapp2.2\WebAPIApplication.dll
+C:\Users\conmc\source\repos\lenders-api_v3\quickstart\01-authorization\bin\Debug\netcoreapp2.2\WebAPIApplication.pdb
+C:\Users\conmc\source\repos\lenders-api_v3\quickstart\01-authorization\obj\Debug\netcoreapp2.2\WebAPIApplication.csprojAssemblyReference.cache
+C:\Users\conmc\source\repos\lenders-api_v3\quickstart\01-authorization\obj\Debug\netcoreapp2.2\WebAPIApplication.RazorAssemblyInfo.cache
+C:\Users\conmc\source\repos\lenders-api_v3\quickstart\01-authorization\obj\Debug\netcoreapp2.2\WebAPIApplication.RazorAssemblyInfo.cs
+C:\Users\conmc\source\repos\lenders-api_v3\quickstart\01-authorization\obj\Debug\netcoreapp2.2\WebAPIApplication.AssemblyInfoInputs.cache
+C:\Users\conmc\source\repos\lenders-api_v3\quickstart\01-authorization\obj\Debug\netcoreapp2.2\WebAPIApplication.AssemblyInfo.cs
+C:\Users\conmc\source\repos\lenders-api_v3\quickstart\01-authorization\obj\Debug\netcoreapp2.2\WebAPIApplication.RazorTargetAssemblyInfo.cache
+C:\Users\conmc\source\repos\lenders-api_v3\quickstart\01-authorization\obj\Debug\netcoreapp2.2\WebAPIApplication.dll
+C:\Users\conmc\source\repos\lenders-api_v3\quickstart\01-authorization\obj\Debug\netcoreapp2.2\WebAPIApplication.pdb
