@@ -79,3 +79,5 @@ C:\Users\conmc\source\repos\lenders_api_v1\AdvertHandler\obj\Debug\netcoreapp3.1
 C:\Users\conmc\source\repos\lenders_api_v1\AdvertHandler\obj\Debug\netcoreapp3.1\AdvertHandler.csproj.CopyComplete
 C:\Users\conmc\source\repos\lenders_api_v1\AdvertHandler\obj\Debug\netcoreapp3.1\AdvertHandler.dll
 C:\Users\conmc\source\repos\lenders_api_v1\AdvertHandler\obj\Debug\netcoreapp3.1\AdvertHandler.pdb
+C:\Users\conmc\source\repos\lenders_api_v1\AdvertHandler\obj\Debug\netcoreapp3.1\AdvertHandler.csproj.CoreCompileInputs.cache
+C:\Users\conmc\source\repos\lenders_api_v1\AdvertHandler\obj\Debug\netcoreapp3.1\AdvertHandler.genruntimeconfig.cache

@@ -20,3 +20,4 @@ C:\Users\conmc\source\repos\lenders_api_v1\Shared\obj\Debug\netcoreapp3.1\Shared
 C:\Users\conmc\source\repos\lenders_api_v1\Shared\obj\Debug\netcoreapp3.1\Shared.AssemblyInfo.cs
 C:\Users\conmc\source\repos\lenders_api_v1\Shared\obj\Debug\netcoreapp3.1\Shared.dll
 C:\Users\conmc\source\repos\lenders_api_v1\Shared\obj\Debug\netcoreapp3.1\Shared.pdb
+C:\Users\conmc\source\repos\lenders_api_v1\Shared\obj\Debug\netcoreapp3.1\Shared.csproj.CoreCompileInputs.cache
